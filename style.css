@@ -166,7 +166,7 @@ nav ul li a:hover {
 .container-poster {
   display: grid;
   grid-template-columns: 155px 155px 155px 155px 155px 155px;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
   align-items: start;
   padding-bottom: 1rem;
@@ -207,6 +207,7 @@ nav ul li a:hover {
   display: flex;
   margin: auto;
   width: 85%;
+  object-fit: cover;
   aspect-ratio: 16/9;
   border-radius: 15px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
