@@ -63,12 +63,15 @@ nav ul li a:hover {
 
 .slide-show {
   width: 80%;
+  height: 450px;
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
+
 
 .slide-wraper {
   display: flex;
@@ -376,5 +379,23 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-.komunitas div.platform img {
+.news {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 80%;
+  height:250px;
+}
+
+.upcoming {
+  background-color: yellow;
+  border-radius: 15px;
+}
+
+.berita {
+  background-color: white;
+  border-radius: 15px;
 }
