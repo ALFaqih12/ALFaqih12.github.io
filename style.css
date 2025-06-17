@@ -14,36 +14,36 @@ body {
 /*Style untuk HOMEPAGE*/
 
 .container {
-  margin: 0 auto;
   background-color: #101318;
 }
 
 nav {
   display: flex;
   background-color: #262b36;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+  justify-content: space-around;
+  padding: 20px 0;
+  gap: 36%;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
-  display: flex;
-  align-items: center;
+  display: flex;  
   list-style: none;
+  gap: 1rem;
+  align-items: center;
 }
 
 .navbar h1 {
-  font-size: 20px;
+  font-size: 22px;
   color: yellow;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #f4f4f4;
+  color:white;
   font-weight: 600;
-  font-size: 15px;
-  padding: 8px;
+  font-size: 17px;
   transition: all;
   transition-duration: 300ms;
   border-bottom: 2px solid rgba(255, 255, 0, 0);
@@ -115,29 +115,80 @@ nav ul li a:hover {
   border-radius: 15px;
 }
 
-.nav-slide {
+.comingsoon {
   display: flex;
-  column-gap: 1rem;
+  padding-top: 2rem;
+  padding-left: 9rem;
+  padding-bottom: 1rem;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.comingsoon h2 {
+  font-weight: 500;
+}
+
+.container-comingsoon {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  width: 80%;
+  align-items: flex-start;
+  object-fit: cover;
+  padding: 1rem;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.container-comingsoon::-webkit-scrollbar {
+  display: none;
+}
+
+.poster-comingsoon {
+  width: 150px;
+}
+
+.poster-comingsoon img {
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.poster-comingsoon img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  
+}
+
+.poster-comingsoon h2 {
+  margin-top: 7px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.arrows {
   position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 1;
-}
-
-.nav-slide a {
   display: flex;
-  margin-top: -2rem;
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
+  align-items: center;
+  left: 81%;
+  gap: 10px;
 }
 
-.nav-slide a:hover {
-  opacity: 1;
+.arrows button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  box-shadow: 1px 1px 1px #000;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  font-family: monospace;
+  transition: 0.3s;
+}
+
+.arrows button:hover {
+  background-color: yellow;
 }
 
 .sedang-tayang {
@@ -146,23 +197,14 @@ nav ul li a:hover {
   padding-left: 9rem;
   gap: 0.5rem;
   color: #fff;
+  margin-top: 2rem;
 }
 
 .sedang-tayang h2 {
-  display: flex;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.icon-movie {
-  display: flex;
-  align-items: center;
-  margin-top: -1rem;
+  font-weight: 500;
 }
 
 .content {
-  justify-content: center;
-  align-items: center;
   color: rgb(122, 130, 147);
 }
 
@@ -170,25 +212,27 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: 155px 155px 155px 155px 155px 155px;
   gap: 2rem;
+  object-fit: cover;
   justify-content: center;
   align-items: start;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .poster {
   width: 150px;
-  margin: 0 7px;
 }
-.poster a img {
-  display: block;
+
+.poster img {
   width: 100%;
   border-radius: 15px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  transition: 1s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .poster:hover img {
-  transform: scale(0.9);
+  transform: scale(1.1);
   z-index: 2;
 }
 
@@ -325,17 +369,15 @@ nav ul li a:hover {
 
 .container-about h3 {
   display: flex;
-  margin: auto;
-  text-align: center;
-  padding-top: 3rem;
+  justify-content: center;
+  padding: 3rem;
   padding-bottom: 2rem;
 }
 
 .tim {
   display: grid;
   grid-template-columns: 155px 155px 155px 155px;
-  padding: 1rem;
-  gap: 7rem;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
@@ -372,30 +414,4 @@ nav ul li a:hover {
   width: 20px;
 }
 
-/* Style untuk page community */
 
-.komunitas {
-  display: flex;
-  justify-content: center;
-}
-
-.news {
-  display: grid;
-  grid-template-columns: 49% 49%;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0 auto;
-  margin-top: 1rem;
-  width: 80%;
-  height:250px;
-}
-
-.upcoming {
-  background-color: yellow;
-  border-radius: 15px;
-}
-
-.berita {
-  background-color: white;
-  border-radius: 15px;
-}
