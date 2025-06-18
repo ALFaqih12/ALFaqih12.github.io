@@ -11,6 +11,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /*Style untuk HOMEPAGE*/
 
 .container {
