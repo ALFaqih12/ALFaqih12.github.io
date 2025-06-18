@@ -138,6 +138,7 @@ nav ul li a:hover {
   padding: 1rem;
   white-space: nowrap;
   margin: 0 auto;
+  background-color: #ffff00;
 }
 
 .container-comingsoon::-webkit-scrollbar {
@@ -209,11 +210,14 @@ nav ul li a:hover {
 }
 
 .container-poster {
+  background-color: #ffff00;
   display: grid;
   grid-template-columns: 155px 155px 155px 155px 155px 155px;
-  gap: 1rem;
+  gap: 2rem;
   object-fit: cover;
-  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 3.5rem;
   align-items: start;
   padding-bottom: 1rem;
   padding-top: 1rem;
