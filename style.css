@@ -413,4 +413,45 @@ nav ul li a:hover {
   width: 20px;
 }
 
+/* footer */
 
+footer {
+  text-align: center;
+  padding: 1rem;
+  text-shadow: 1px 1px 1px black;
+  margin-top: 2rem;
+}
+
+footer h3 {
+  letter-spacing: 0.5px;
+}
+
+.community ul {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  list-style: none;
+}
+
+.community ul li a {
+  color: rgb(122, 130, 147);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.community ul li a:hover {
+  color: white;
+}
+
+.community ul li a img {
+  width: 18px;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  letter-spacing: 0.6px;
+}
