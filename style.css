@@ -210,16 +210,14 @@ nav ul li a:hover {
 }
 
 .container-poster {
-  background-color: #ffff00;
   display: grid;
-  grid-template-columns: 155px 155px 155px 155px 155px 155px;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px;
   gap: 2rem;
   object-fit: cover;
-  width: 80%;
-  margin: 0 auto;
-  /* padding-left: 2rem; */
+  justify-content: center;
   align-items: start;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .poster {
