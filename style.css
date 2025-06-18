@@ -416,10 +416,12 @@ nav ul li a:hover {
 /* footer */
 
 footer {
+  box-shadow: 10px 4px 1px rgba(0, 0, 0, 0.5);
+  background-color: #262b36;
   text-align: center;
   padding: 1rem;
-  text-shadow: 1px 1px 1px black;
   margin-top: 2rem;
+  color: white;
 }
 
 footer h3 {
@@ -435,7 +437,7 @@ footer h3 {
 }
 
 .community ul li a {
-  color: rgb(122, 130, 147);
+  color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -443,7 +445,8 @@ footer h3 {
 }
 
 .community ul li a:hover {
-  color: white;
+  color: #262b36;
+  text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 .community ul li a img {
@@ -453,5 +456,5 @@ footer h3 {
   display: flex;
   justify-content: center;
   gap: 3px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
 }
