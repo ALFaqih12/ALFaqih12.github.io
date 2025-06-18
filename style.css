@@ -217,10 +217,9 @@ nav ul li a:hover {
   object-fit: cover;
   width: 80%;
   margin: 0 auto;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
   align-items: start;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .poster {
