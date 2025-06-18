@@ -211,7 +211,7 @@ nav ul li a:hover {
 .container-poster {
   display: grid;
   grid-template-columns: 155px 155px 155px 155px 155px 155px;
-  gap: 2rem;
+  gap: 1rem;
   object-fit: cover;
   justify-content: center;
   align-items: start;
