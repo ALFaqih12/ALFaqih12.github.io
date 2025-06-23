@@ -312,9 +312,8 @@ nav ul li a:hover {
 }
 
 .tombolkembali {
-  display: flex;
-  padding: 1rem;
   padding-left: 6.5rem;
+  width: fit-content;
 }
 
 .tombolkembali a {
@@ -323,20 +322,22 @@ nav ul li a:hover {
   text-decoration: none;
   color: #f4f4f4;
   font-size: 17px;
-  padding: 8px 0;
+  margin-top: 1rem;
   transition: all;
-  transition-duration: 300ms;
-  border-bottom: 2px solid rgba(255, 255, 0, 0);
+  transition-duration: 300ms; 
 }
 
-.tombolkembali:hover a {
-  color: yellow;
-  border-bottom: 2px solid yellow;
+.tombolkembali a:hover {
+  color: yellow; 
 }
 
 .icon_home {
   display: flex;
   align-items: center;
+}
+
+.icon_home img {
+  width: 25px;
 }
 
 /*style untuk page about us*/
@@ -462,3 +463,5 @@ footer h3 {
   gap: 3px;
   letter-spacing: 0.4px;
 }
+
+/* contact page */
