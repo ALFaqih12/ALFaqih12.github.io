@@ -176,7 +176,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   left: 81%;
-  gap: 10px;
+  gap: 5px;
 }
 
 .arrows button {
@@ -184,15 +184,29 @@ nav ul li a:hover {
   height: 40px;
   border: none;
   box-shadow: 1px 1px 1px #000;
-  border-radius: 50%;
   cursor: pointer;
   z-index: 100;
   font-family: monospace;
-  transition: 0.3s;
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  transition: 300ms;
+}
+
+#next {
+  border-radius: 0 50% 50% 0;
+}
+
+#prev {
+  border-radius: 50% 0 0 50%;
 }
 
 .arrows button:hover {
   background-color: yellow;
+}
+
+.arrows button:active {
+  transform: scale(0.9);
 }
 
 .sedang-tayang {
@@ -465,3 +479,93 @@ footer h3 {
 }
 
 /* contact page */
+
+.contact {
+  padding: 1rem;
+  width: 60%;
+  color: white;
+  background-color:#262b36;
+  margin: 2rem auto 2rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px yellow;
+}
+
+.contact h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffff00;
+}
+
+.contact p {
+  text-align: center;
+}
+
+form {
+  width: fit-content;
+  margin: 3rem auto;
+  padding: 1rem 0 2rem 0;
+}
+
+label {
+  font-size: 19px;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+  outline: none;
+  transition: 150ms;
+
+  
+}
+
+input:focus {
+  outline: 2px solid yellow;
+  background: transparent;
+  color: white;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  outline: none;
+  transition: 150ms;
+}
+
+textarea:focus {
+  outline: 2px solid yellow;
+  background: transparent;
+  color: white;
+}
+
+.submit-contact {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  background-color: #101318;
+  color: #fff;
+  transition: 300ms;
+}
+
+.submit-contact:hover {
+  background-color: #fff;
+  color: #101318;
+}
+
+.submit-contact:active {
+  transform: scale(0.9);
+}

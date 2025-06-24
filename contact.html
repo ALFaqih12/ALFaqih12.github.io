@@ -16,16 +16,29 @@
           <li><a href="contact.html">CONTACT</a></li>   
         </ul>
       </nav>
-      <form action="">
-        <label for="nama">Nama</label>
-        <input type="text" name="nama" id="nama">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
-        <label for="">Subject</label>
-        <input type="text" name="subject" id="subject">
-        <label for="">Pesan</label>
-        <textarea name="pesan" id="pesan"></textarea>
-      </form>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Hubungi kami untuk kolaborasi atau pertanyaan lainnya</p>
+        <form action="" id="formcontact">
+          <label for="nama">Nama</label>
+          <br>
+          <input type="text" name="nama" id="nama">
+          <br>
+          <label for="email">Email</label>
+          <br>
+          <input type="text" name="email" id="email">
+          <br>
+          <label for="">Subject</label>
+          <br>
+          <input type="text" name="subject" id="subject">
+          <br>
+          <label for="">Pesan</label>
+          <br>
+          <textarea name="pesan" id="pesan"></textarea>
+          <br>
+          <button type="submit" class="submit-contact" id="submit">Send</button>
+        </form>
+      </div>
 
       <footer>
         <h3>Join Our Community</h3>
@@ -40,6 +53,25 @@
       </footer>
       </div>
     </div>
-  <script src="javascript.js"></script>
+  <script>
+      // Untuk notifikasi contact
+
+    document.getElementById('formcontact').addEventListener('submit', function(e) {
+      e.preventDefault(); // Mencegah reload halaman
+
+      // Validasi sederhana (opsional, karena sudah pakai required di input)
+      const nama = document.getElementById('nama').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const pesan = document.getElementById('pesan').value.trim();
+
+      if (nama && email && subject && pesan) {
+        alert("Thanks Bro nanti kita balas yah 👍");
+        this.reset(); // reset form setelah dikirim
+      } else {
+        alert("Jangan sampe ada data yang terlewat bro 🤨");
+      }
+    });
+  </script>
   </body>
 </html>
