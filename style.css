@@ -397,7 +397,7 @@ nav ul li a:hover {
 }
 
 .desc-web {
-  border: 2px dotted yellow;
+  border: 3px dotted yellow;
   border-radius: 15px;
   text-align: center;
   margin: auto;
@@ -420,7 +420,7 @@ nav ul li a:hover {
   margin: auto;
   border-radius: 15px;
   padding: 2.5rem 2rem 2rem 2rem;
-  border: 2px dotted yellow;
+  border: 3px dotted yellow;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -431,6 +431,7 @@ nav ul li a:hover {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  border: 3px dotted yellow;
   object-fit: cover;
 }
 
